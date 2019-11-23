@@ -10,6 +10,10 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 	PLATFORM='linux'
 elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
 	PLATFORM='windows'
+elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ]; then
+	PLATFORM='windows'
+elif [ "$OSTYPE" == "msys" ]; then
+	PLATFORM='windows'
 fi
 
 PACKAGE_NAME="SourcetrailPythonIndexer_${SOURCETRAIL_PYTHON_INDEXER_VERSION}-${PLATFORM}"
