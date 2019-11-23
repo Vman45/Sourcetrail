@@ -70,7 +70,6 @@ cd build
 dir
 
 if [ ! -e "temp" ]; then
-	mkdir --help
 	mkdir "temp"
 fi
 

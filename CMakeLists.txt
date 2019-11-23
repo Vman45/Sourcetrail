@@ -223,7 +223,7 @@ if (BUILD_PYTHON_LANGUAGE_PACKAGE)
 	add_custom_command(
 		TARGET ${LIB_PYTHON_PROJECT_NAME}
 		PRE_BUILD
-		COMMAND ${PROJECT_SOURCE_DIR}/script/download_python_indexer.sh
+		COMMAND cmd.exe /c "\"${PROJECT_SOURCE_DIR}/script/download_python_indexer.sh\""
 		COMMENT "download python indexer"
 	)
 
