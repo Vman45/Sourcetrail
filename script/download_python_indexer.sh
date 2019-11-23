@@ -70,11 +70,13 @@ cd build
 dir
 
 if [ ! -e "temp" ]; then
-	mkdir "temp"
+	cmd /c "mkdir temp"
 fi
 
 dir
 cd ..
+
+where cmd
 
 echo -e $INFO "starting to download $PACKAGE_FILE_NAME"
 
