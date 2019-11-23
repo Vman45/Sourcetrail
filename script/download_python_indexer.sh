@@ -30,7 +30,7 @@ INFO="\033[33mInfo:\033[00m"
 if [ $PLATFORM == "windows" ]; then
 	ORIGINAL_PATH_TO_SCRIPT="${0}"
 	CLEANED_PATH_TO_SCRIPT="${ORIGINAL_PATH_TO_SCRIPT//\\//}"
-	ROOT_DIR=`dirname "$CLEANED_PATH_TO_SCRIPT"`
+	ROOT_DIR=${CLEANED_PATH_TO_SCRIPT%/*}
 else
 	ROOT_DIR="$( cd "$( dirname "$0" )" && pwd )"
 fi
