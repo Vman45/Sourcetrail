@@ -19,8 +19,8 @@ fi
 PACKAGE_NAME="SourcetrailPythonIndexer_${SOURCETRAIL_PYTHON_INDEXER_VERSION}-${PLATFORM}"
 PACKAGE_FILE_NAME="${PACKAGE_NAME}.zip"
 PACKAGE_URL="https://github.com/CoatiSoftware/SourcetrailPythonIndexer/releases/download/${SOURCETRAIL_PYTHON_INDEXER_VERSION}/${PACKAGE_FILE_NAME}"
-TEMP_PATH="build/temp"
-TARGET_PATH="bin/app/data/python"
+TEMP_PATH="build\\temp"
+TARGET_PATH="bin\\app\\data\\python"
 
 
 ABORT="\033[31mAbort:\033[00m"
