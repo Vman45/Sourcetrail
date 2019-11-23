@@ -69,8 +69,11 @@ dir
 cd build
 dir
 
+
+
+
 if [ ! -e "temp" ]; then
-	cmd /c "mkdir temp"
+	mkdir "./temp"
 fi
 
 dir
