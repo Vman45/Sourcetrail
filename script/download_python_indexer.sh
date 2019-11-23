@@ -59,7 +59,13 @@ if [ -e "$TARGET_PATH/SourcetrailPythonIndexer.exe" ]; then
 	fi
 fi
 
-mkdir -p $TEMP_PATH
+dir
+mkdir $TEMP_PATH
+dir
+
+cd build
+dir
+cd ..
 
 echo -e $INFO "starting to download $PACKAGE_FILE_NAME"
 
