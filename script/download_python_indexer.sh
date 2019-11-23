@@ -60,10 +60,19 @@ if [ -e "$TARGET_PATH/SourcetrailPythonIndexer.exe" ]; then
 fi
 
 dir
-mkdir $TEMP_PATH
+if [ ! -e "build" ]; then
+	mkdir "build"
+fi
+
 dir
 
 cd build
+dir
+
+if [ ! -e "temp" ]; then
+	mkdir "temp"
+fi
+
 dir
 cd ..
 
